@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Counter Homework</string>
+    <string name="counter">0</string>
+    <string name="count_label">COUNT</string>
+    <string name="enter_the_text_here">Enter The Text Here</string>
+</resources>

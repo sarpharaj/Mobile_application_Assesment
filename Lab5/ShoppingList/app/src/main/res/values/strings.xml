@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="activity2_name">Items</string>
+    <string name="cheese">Cheese</string>
+    <string name="rice">Rice</string>
+    <string name="apples">Apples</string>
+    <string name="bread">Bread</string>
+    <string name="oranges">Oranges</string>
+    <string name="shampoo">Shampoo</string>
+    <string name="dog_food">Dog Food</string>
+    <string name="washing_powder">Washing Powder</string>
+    <string name="sugar">Sugar</string>
+    <string name="salt">Salt</string>
+    <string name="add_item">Add Item</string>
+    <string name="location">Duhabi Sunsari</string>
+    <string name="get_location">Get Location</string>
+</resources>

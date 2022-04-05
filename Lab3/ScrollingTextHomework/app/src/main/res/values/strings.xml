@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Scrolling Text</string>
+    <string name="article_title">Developing Mobile Application</string>
+    <string name="article_subtitle">Scrolling Text In Mobile Application</string>
+    <string name="article_text">A mobile application, most commonly referred to as an app, is a type of application software designed to run on a mobile device, such as a smartphone or tablet computer. Mobile applications frequently serve to provide users with similar services to those accessed on PCs. ebbi.github.io
+        \n\n
+        <b>Add and edit <i>TextView</i> elements</b>\n In this practical, you will create an Android project for the ScrollingText app, add TextView elements to the layout for an article title and subtitle, and change the existing "Hello World" TextView element to show a lengthy article. The figure below is a diagram of the layout.
+        \n\n
+        <b>Add a <i>ScrollView</i> and an active web link</b> \n In the previous task you created the ScrollingText app with TextView elements for an article title, subtitle, and lengthy article text. You also included a web link, but the link is not yet active. You will add the code to make it active.
+
+        Also, the TextView by itself can\'t enable users to scroll the article text to see all of it. You will add a new ViewGroup called ScrollView to the XML layout that will make the TextView scrollable.
+        \n\n
+        <b>Scroll multiple elements</b>\n As noted before, a ScrollView can contain only one child View (such as the article TextView you created). However, that View can be another ViewGroup that contains View elements, such as LinearLayout. You can nest a ViewGroup such as LinearLayout within the ScrollView, thereby scrolling everything that is inside the LinearLayout.
+
+        For example, if you want the subheading of the article to scroll along with the article, add a LinearLayout within the ScrollView, and move the subheading and article into the LinearLayout. The LinearLayout becomes the single child View in the ScrollView as shown in the figure below, and the user can scroll the entire LinearLayout: the subheading and the article.
+        \n
+        <b>Lorem Ipsum Words</b>\n <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+</string>
+    <string name="add_comment">ADD COMMENT</string>
+</resources>

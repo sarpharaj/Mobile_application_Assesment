@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="468dp"
+        android:layout_height="316dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFF00"
+        android:gravity="center|center_vertical"
+        android:text="@string/count_initial_value"
+        android:textAllCaps="false"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="countZero"
+        android:text="@string/button_label_zero"
+        android:textSize="19sp"
+        app:backgroundTint="#7C7A7A"
+        app:layout_constraintEnd_toEndOf="@+id/button_count"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_count"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/show_count"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zero"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/zero"
+        app:layout_constraintTop_toTopOf="@+id/show_count" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="button_toast" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
